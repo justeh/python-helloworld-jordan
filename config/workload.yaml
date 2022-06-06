@@ -1,0 +1,13 @@
+apiVersion: carto.run/v1alpa1
+kind: Workload
+metadata:
+ name: <app-name>
+ labels:
+   apps.tanzu.vmware.com/workload-type: <workload-type>
+   app.kubernetes.io/part-of: <app-name>
+spec:
+ source:
+   git:
+     url: <git-source-url>
+     ref:
+       branch: <git-branch-name>
